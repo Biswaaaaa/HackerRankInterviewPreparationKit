@@ -3,7 +3,7 @@ package com.barman.ArraysTest;
 public class Array2D {
 static int hourglassSum(int [][] arr) {
 	int sum=-1000;
-	//below is the for hacker rank solution
+	//below is the code for hacker rank solution
 	for(int i=0;i<4; i++) {
 			for(int j=0; j < 4; j++) {
 			int top= arr[i][j]+arr[i][j+1]+arr[i][j+2];
@@ -11,8 +11,25 @@ static int hourglassSum(int [][] arr) {
 			int bottom = arr[i+2][j]+arr[i+2][j+1]+arr[i+2][j+2];
 				if(top+middle+bottom>sum) sum=top+middle+bottom;
 			}
+	}  return sum;
+	
+//code to print the diamonds
+/*	for (int i=0;i<4;i++) {
+		for (int j=0; j<4;j++) {
+			System.out.println(arr[i][j]+" "+arr[i][j+1]+" "+arr[i][j+2]);
+			System.out.println("  "+arr[i+1][j+1]);
+			System.out.println(arr[i+2][j]+" "+arr[i+2][j+1]+" "+arr[i+2][j+2]);
+			System.out.println();	
+		}
+		
+		System.out.println();
+		System.out.println();
+		
 	}
-		return sum;
+	
+	
+	return 1;
+		*/
 	}
 	public static void main(String[] args) {		
 		int arr[][] = {
